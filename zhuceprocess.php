@@ -1,0 +1,34 @@
+<?php
+session_start();
+require 'student.class.php';
+$sno=$_POST['sno'];
+$usernc=$_POST['usernc'];
+$truename=$_POST['truename'];
+$pwd=$_POST['pwd1'];
+$email=$_POST['email'];
+$tel=$_POST['tel'];
+$major=$_POST['major'];
+$checkcode_zhuce=$_POST['checkcode_zhuce'];
+if($checkcode_zhuce!=$_SESSION['checkcode_zhuce']){
+    header("location:zhuce.php?error=3");//验证码错误
+    exit();
+}
+if(empty($sno)||empty($usernc)||empty($truename)||empty($pwd)||empty($email)||empty($tel)||empty($major)||empty($checkcode_zhuce)){
+	header("location:zhuce.php?error=2");//有信息没有填入
+	exit();
+}
+$student=new Student();
+$res=$student->checksno($sno);
+if($res){
+	$res1=$student->addstudent($sno,$usernc,$truename,md5($pwd),$email,$tel,$major);
+	if($res1==1){
+		header("location:ok.php");
+		exit();
+	}else{
+		header("location:error.php");
+		exit();
+	}
+}else{
+	header("location:zhuce.php?error=1");//出现同样的学号，不能注册
+	exit();
+}

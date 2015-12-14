@@ -1,0 +1,160 @@
+ul{
+    list-style-type:none;
+}
+body{
+    background-color: white;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.header{
+	width: 1349px;
+	height:100px;
+	background-color: #5DAAD6;
+}
+.header span{
+
+	float: right;
+    position: absolute;
+	right: 100px;
+	padding-top: 25px;
+    
+}
+.header span a{
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+.header img{
+	margin-left: 100px;
+
+}
+.navigator{
+	width: 1349px;
+	height: 360px;
+	margin-top: 0px;
+	padding: 0px;
+}
+.product_navi{
+	width: 1349px;
+	height:60px;
+	background-color: white;
+}
+.product_navi ul{
+	list-style-type:none;
+    margin:0;
+    padding:0;
+   
+}
+.product_navi ul li{
+	float:left;
+}
+
+
+.up_navi a:link,.up_navi a:visited{
+    display:block;
+   font-weight:bold;
+   line-height: 50px;
+   height: 60px;
+   text-align: center;
+     padding-top: 20px;
+   color:#FFFFFF;
+    background-color:#bebebe;
+    width:216.63px;
+   text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.up_navi a:hover,.up_navi a:active
+{
+    background-color:#5DAAD6;
+}
+.zi_navi li a:link,.zi_navi li a:visited{
+    display:block;
+    font-weight:bold;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color:#FFFFFF;
+    background-color:#bebebe;
+    width:216.63px;
+    text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.zi_navi li a:hover,.zi_navi li a:active
+{
+    background-color:#5DAAD6;
+}
+.product{
+    position: relative;
+    top: 117px;
+	width: 1349px;
+	height: 450px;
+	background-color: gray;
+    float: left;
+}
+.footer{
+    position: relative;
+    top: 0px;
+	width: 1349px;
+	height:200px;
+	background-color: #EEEEEE;
+}
+.kaoshi,.hudong,.weike,.kecheng{
+	position: absolute;
+	display: none;
+	z-index:1000;
+}
+.kecheng ul,.weike ul,.kaoshi ul,.hudong ul{
+	width: 225.8px;
+}
+.kecheng{
+	left:225px; 
+}
+.weike{
+	 left:449.26px; 
+}
+.kaoshi{
+	left:673px;
+}
+.container_loginaa{
+	position: absolute;
+	left: 300px;
+	top: 0px;
+	width:200px;
+	height: 200px;
+	z-index: 2000;
+}
+.login_box_1{
+    float: right;
+    margin-right: 100px;
+    padding-top: 25px;
+    position: absolute;
+    z-index: 100;
+    right: -2px;
+    top:50px;
+}
+.login_box_1 ul li a:link,.login_box_1 ul li a:visited {
+    display: block;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+    background-color: #bebebe;
+    width: 93px;
+    text-align: center;
+    padding: 4px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.login_box_1 ul li a:hover,.login_box_1 ul li a:active
+{
+    background-color:#5DAAD6;
+}
